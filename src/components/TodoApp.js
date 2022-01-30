@@ -84,8 +84,9 @@ const TodoApp = () => {
   };
 
   return (
-    <div>
-      <div class="flex">
+    <div class="w-full flex flex-col ">
+      <div 
+      class="flex flex-col-reverse lg:flex-row-reverse lg:items-end lg:justify-center">
         <TodosStatus
           filterTodos={filterTodos}
           selectedOption={selectedOption}

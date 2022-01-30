@@ -14,12 +14,15 @@ const TodosStatus = ({ filterTodos, selectedOption, setSelectedOption }) => {
   ];
 
   return (
-    <Select
-      className="selectOption"
-      onChange={changeHandler}
-      options={optionStatus}
-      value={selectedOption}
-    />
+    <section class="flex justify-center mt-3 lg:mr-16 ">
+      <Select
+        className="selectOption"
+        onChange={changeHandler}
+        options={optionStatus}
+        value={selectedOption}
+        class="border border-purple-500 "
+      />
+    </section>
   );
 };
 
