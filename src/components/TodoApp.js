@@ -68,7 +68,6 @@ const TodoApp = () => {
   };
 
   const filterTodos = (status) => {
-    console.log(status);
     switch (status) {
       case "All":
         setFilteredTodos(todos);
@@ -86,7 +85,7 @@ const TodoApp = () => {
 
   return (
     <div>
-      <div className="allContainer">
+      <div class="flex">
         <TodosStatus
           filterTodos={filterTodos}
           selectedOption={selectedOption}

@@ -30,7 +30,6 @@ const TodoList = ({ todos, onComplete, onDelete, onEdit }) => {
 
   return (
     <div>
-      {" "}
       {edit.id ? (
         <TodoForm addTodoHandler={editTodo} edit={edit} />
       ) : (
