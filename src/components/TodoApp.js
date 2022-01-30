@@ -84,9 +84,8 @@ const TodoApp = () => {
   };
 
   return (
-    <div class="w-full flex flex-col ">
-      <div 
-      class="flex flex-col-reverse lg:flex-row-reverse lg:items-end lg:justify-center">
+    <section class="w-full flex flex-col">
+      <div class="flex flex-col-reverse justify-center items-center">
         <TodosStatus
           filterTodos={filterTodos}
           selectedOption={selectedOption}
@@ -97,13 +96,15 @@ const TodoApp = () => {
           className={classes.todoForm}
         />
       </div>
-      <TodoList
-        todos={filteredTodos}
-        onComplete={completeHandler}
-        onDelete={deleteHandler}
-        onEdit={editHandler}
-      />
-    </div>
+      <div>
+        <TodoList
+          todos={filteredTodos}
+          onComplete={completeHandler}
+          onDelete={deleteHandler}
+          onEdit={editHandler}
+        />
+      </div>
+    </section>
   );
 };
 

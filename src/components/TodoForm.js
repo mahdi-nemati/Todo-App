@@ -28,7 +28,7 @@ const TodoForm = (props) => {
   return (
     <form onSubmit={submitHandler} 
     class="w-full flex justify-center text-base 
-    sm:text-lg md:text-xl lg:text-2xl lg:w-7/12 ">
+    sm:text-lg md:text-xl lg:text-2xl lg:w-10/12 ">
       <input
         type="text"
         value={input}
@@ -36,7 +36,7 @@ const TodoForm = (props) => {
         placeholder={props.edit ? "Edit todo..." : "Add todo..."}
         ref={inputRef}
         class="outline-none border border-purple-400 
-        rounded-md pl-2 w-9/12 lg:w-7/12 focus:border-2 caret-purple-700 sm:pt-1 sm:pb-1"
+        rounded-md pl-2 w-9/12 focus:border-2 caret-purple-700 sm:pt-1 sm:pb-1"
       />
       <button type="submit"
        class={ props.edit ?
