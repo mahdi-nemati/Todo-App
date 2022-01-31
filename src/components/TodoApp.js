@@ -99,8 +99,12 @@ const TodoApp = () => {
       <div>
         {!todos.length ? (
           <div class="flex flex-col items-center mt-20 text-zinc-700">
-            <h3 class="text-lg mb-2 sm:text-xl 
-            sm:mb-3 md:text-2xl md:mb-4 lg:text-3xl lg:mb-5">No tasks</h3>
+            <h3
+              class="text-lg mb-2 sm:text-xl 
+            sm:mb-3 md:text-2xl md:mb-4 lg:text-3xl lg:mb-5"
+            >
+              No tasks
+            </h3>
             <p class="sm:text-lg md:text-xl lg:text-2xl">Anything to add?</p>
           </div>
         ) : (
