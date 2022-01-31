@@ -14,9 +14,9 @@ const Todo = ({ todo, onComplete, onDelete, onEdit }) => {
             onClick={onComplete}
             checked={todo.isComplated}
             type="checkbox"
-            class="w-4 h-4 mr-2 "
+            class="w-4 h-4 mr-2 cursor-pointer"
           />
-          <span onClick={onComplete}>{todo.text}</span>
+          <span onClick={onComplete} class="cursor-pointer">{todo.text}</span>
         </div>
         <div>
           <button
