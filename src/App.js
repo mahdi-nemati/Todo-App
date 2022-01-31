@@ -9,9 +9,6 @@ const App = () => {
         <h1>TodoList App</h1>
       </header>
       <TodoApp />
-      <footer class="absolute bottom-1 text-purple-900 text-lg sm:hidden">
-        <p>made with ❤️ by Mahdi Nemati</p>
-      </footer>
     </main>
   );
 };
